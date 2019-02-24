@@ -94,7 +94,7 @@ Once the CloudFormation stack is complete, we can send a test message using the 
 
 1. Open the ActiveMQ Management Console, available at https://<BROKER_ENDPOINT>:8162. If you have trouble accessing the console, modify its security group to allow inbound traffic from your IP address.
 
-2. Click the link "Manage ActiveMQ broker" and enter the username and password from when you created the broker.
+2. Click the link "Manage ActiveMQ broker" and enter the username and password from when you created the broker. Make sure that the username has Console access as 'Yes' and Groups as 'Admins'. If not, edit the user and reboot the broker. 
 
 3. In the menu just beneath the ActiveMQ logo, click the link at the far right, "Send".
 
