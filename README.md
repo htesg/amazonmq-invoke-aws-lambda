@@ -1,6 +1,6 @@
 # amazonmq-invoke-aws-lambda
 
-This project is an example of invoking AWS Lambda from Queues and Topics managed by Amazon MQ brokers. The intent of this project is to populate Amazon DynamoDB using AWS Lambda.
+This project is an example of invoking AWS Lambda from Queues and Topics managed by Amazon MQ brokers. The intent of this project is to populate Amazon DynamoDB using AWS Lambda. This project has been customized from the [original](https://github.com/aws-samples/amazonmq-invoke-aws-lambda) repository to have the timeseries table in DynamoDB.  
 
 This solution makes use of AWS CloudWatch Events to trigger a Lambda function that polls for messages on a queue. Messages are then sent to a second Lambda function that writes the message to an Amazon DynamoDB table. Further details can be found in this [blog post](https://aws.amazon.com/blogs/compute/invoking-aws-lambda-from-amazon-mq/).
 
@@ -45,6 +45,8 @@ We will use the [AWS Serverless Application Model](https://github.com/awslabs/se
 	```
 
 2. Install Lambda dependencies:
+
+Make sure you have cloned or downloaded the repository on your local drive. Navigate to the cloned directory location (e.g. /Users/\<username\>/\<someworkspace\>/amazonmq-invoke-aws-lambda)
 
 	```
 	$ cd subscriber && npm install
